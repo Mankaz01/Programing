@@ -4,6 +4,11 @@
             let doIt = () => {
                 inputText = document.getElementById("userType").value;
                 alert(Number(inputText)+1);
+                if(inputText > 15) {
+                    alert("lagguage is exceed")
+                } else {
+                    alert("lagguage updated")
+                }
             }
         </script>
     </head>
