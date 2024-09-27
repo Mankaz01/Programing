@@ -1,9 +1,14 @@
 
-let sum =0;
-
-for (let i=0; i< 1000; i++) {
-    if( i % 3 === 0 || i % 5 === 0) {
-        sum += i
+function multiples(a, b, n){
+    let sum =0;
+    
+    for (let i=0; i< n; i++) {
+        if( i % a === 0 || i % b === 0) {
+            sum += i
+        }
     }
+    return sum
 }
-alert("sum of multiple of 3 or 5 below 1000 is: " + sum)
+let result = multiples(3, 5, 1000);
+alert("sum is: " + result)
+
