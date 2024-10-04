@@ -3,13 +3,11 @@
         function calSum(){
             const a1 = document.getElementById("x1").value;
             const b1 = document.getElementById("y1").value;
-            console.log(typeof(a1))
             const addition = parseInt(a1) + parseInt(b1);
            // const sum2=a1+b1;
             document.getElementById("result").innerHTML = "Addition = " + addition;
- 
-             document.getElementById("x1").classList.add("hidden");
-             document.getElementById("y1").classList.add("hidden");
+            document.getElementById("x1").classList.add("hidden");
+            document.getElementById("y1").classList.add("hidden");
             document.querySelector("button").classList.add("hidden");
         }
 </script>
