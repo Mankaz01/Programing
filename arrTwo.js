@@ -9,8 +9,8 @@ function sumOfMul(a, l) {
 }
 
 function multipleSum() {
-    let a = [parseInt(document.getElementById("a").value),
-    parseInt(document.getElementById("b").value)];
+    let a = [parseInt(document.getElementById("a1").value),
+    parseInt(document.getElementById("a2").value)];
     let l = document.getElementById("l").value.split(',').map(Number);
 
     let result = sumOfMul(a, l);
