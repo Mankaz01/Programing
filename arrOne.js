@@ -8,7 +8,10 @@ function sumOfMul(a, b, l){
     return sum;
 }
 
-const a = 3;
-const b = 5;
-const l = [1, 3, 5, 7, 9, 10];
-alert(sumOfMul(a,b,l))
+function multipleSum(){
+    let a = parseInt(document.getElementById("a").value);
+    let b = parseInt(document.getElementById("b").value);
+    let l = parseInt(document.getElementById("l").value);
+    let result = sumOfMul(a, b, l);
+    alert("sum is: " + result)    
+}
