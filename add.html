@@ -1,19 +1,21 @@
 <html>
 <script>
         function calSum(){
-            const a = document.getElementById("x").value;
-            const b = document.getElementById("y").value;
-            const addition = parseInt(a) + parseInt(b);
-           // const sum2=a+b;
+            const a1 = document.getElementById("x1").value;
+            const b1 = document.getElementById("y1").value;
+            console.log(typeof(a1))
+            const addition = parseInt(a1) + parseInt(b1);
+           // const sum2=a1+b1;
             document.getElementById("result").innerHTML = "Addition = " + addition;
-            document.getElementById("x").classList.add("hidden");
-            document.getElementById("y").classList.add("hidden");
+ 
+             document.getElementById("x1").classList.add("hidden");
+             document.getElementById("y1").classList.add("hidden");
             document.querySelector("button").classList.add("hidden");
         }
 </script>
 <style>
         #result { 
-            font-size: 1px;
+            font-size: 1.8rem;
             color: red;
         }
         .hidden { 
@@ -22,9 +24,9 @@
 </style>
  
     <body>
-<input id="x" type="number" placeholder="Enter Number"></input>
+<input id="x1" type="number" placeholder="Enter Number"></input>
 <br></br>
-<input id="y" type="number" placeholder="Enter Number"></input>
+<input id="y1" type="number" placeholder="Enter Number"></input>
 <br></br>
 <button onclick="calSum()">Calculate Sum</button>
 <div id = "result"></div>
