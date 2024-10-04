@@ -11,7 +11,7 @@ function sumOfMul(a, b, l){
 function multipleSum(){
     let a = parseInt(document.getElementById("a").value);
     let b = parseInt(document.getElementById("b").value);
-    let l = parseInt(document.getElementById("l").value);
+    let l = document.getElementById("l").value.split(',').map(Number);
     let result = sumOfMul(a, b, l);
     alert("sum is: " + result)    
 }
