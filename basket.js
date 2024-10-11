@@ -5,7 +5,7 @@ function totalCost(basket, price) {
             totalCost += basket[product] * price[product];
         }
     }
-    return totalCost.toFixed(2);
+    return totalCost;
 }
 
 const basket = {
