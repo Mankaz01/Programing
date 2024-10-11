@@ -15,7 +15,7 @@ const basket = {
 };
 
 const price = {
-    "apple": 1.4,
+    "apple": 1.5,
     "mango": 0.70,
     "bannana": 0.65
 };
