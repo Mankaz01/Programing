@@ -5,7 +5,7 @@ function totalCost(basket, price) {
             totalCost += basket[product] * price[product];
         }
     }
-    return parseFloat(totalCost.toFixed(2));
+    return totalCost.toFixed(2);
 }
 
 const basket = {
@@ -21,5 +21,4 @@ const price = {
 };
 
 const result = totalCost(basket, price);
-console.log(result); // Log the result to the console
 alert(result); // This should display the float correctly
